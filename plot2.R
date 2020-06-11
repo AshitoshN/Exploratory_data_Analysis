@@ -11,7 +11,7 @@ data1 <- mutate(data1, DateTime = paste(data1$Date,data1$Time))
 
 data1$DateTime <-  as.POSIXct(data1$DateTime,format = "%d/%m/%Y %H:%M:%S",tz="UTC")
 
-plot(data1$DateTime,data1$Global_active_power,type = "l",xlab="", ylab="Global Active Power  (kilowatts)")
+plot(data1$DateTime,data1$Global_active_power,type = "l",xlab="", ylab="Global Active Power (kilowatts)")
 
 dev.copy(png, "plot2.png")
    
