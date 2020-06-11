@@ -9,6 +9,7 @@ data1 <- subset(data, data$Date == "1/2/2007" | data$Date == "2/2/2007")
 
 #now we are ready with the data So need to plot the graphs
 data1$Global_active_power <- as.numeric(data1$Global_active_power)
+
 #plot 1
 hist(data1$Global_active_power,col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts")
 
