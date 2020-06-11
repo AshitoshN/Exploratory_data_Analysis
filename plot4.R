@@ -23,10 +23,10 @@ lines(data1$DateTime,data1$Sub_metering_2,col="red")
 
 lines(data1$DateTime,data1$Sub_metering_3,col="blue")
 
-legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),bty = "n",cex = .7,lty=c(1,1))
+legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),bty = "n",cex = .6,lty=c(1,1))
 
 plot(data1$DateTime,data1$Global_reactive_power,xlab = "datetime",ylab = "Global Reactive Power",type = "l")
 
-dev.copy(png,"plot4.png")
+dev.copy(png,"plot4.png",width= 720)
 
 dev.off()
